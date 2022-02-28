@@ -59,7 +59,7 @@ const { logout, isAuthenticated } = useAuth0();
 
 
 
-const Title = () => <h5 className='text-xl text-gray-500 tracking-wider font-semibold text-opacity-80 
+const Title = () => <h5 className='text-xl inline-block align-middle font-zappr text-gray-500 tracking-wider font-semibold text-opacity-80 
 mr-auto ml-2 my-auto 
 transition duration-300 ease-in-out'>Zappr</h5>;
 

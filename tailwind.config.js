@@ -25,6 +25,9 @@ module.exports = {
         88: '22rem',
       },
     },
+    fontFamily: {
+			zappr: ['Barriecito', 'cursive']
+		}
   },
   variants: {},
   plugins: [],
