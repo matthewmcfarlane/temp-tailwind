@@ -17,7 +17,7 @@ function App() {
     <>
 <TopNavigation />
 <SideBar />
-    <div className="flex">
+    <div className="">
       <DashboardContainer />
     </div>
   </>

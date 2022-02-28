@@ -6,9 +6,9 @@ import AllWidgets from '../DashboardWidgets';
 
 const DashboardContainer = () => {
   return (
-    <div className='dark:bg-black pl-52 pr-52 pt-24 pb-24 w-screen h-screen flex-row'>
+    <div className='dark:bg-black pl-52 pt-24 pb-8 pr-8 w-screen h-screen'>
 
-    <div className='bg-red-400 w-screen h-screen flex' ></div>
+    <div className='bg-red-400 w-full h-full flex' ></div>
     {/* <AllWidgets /> */}
 
       
