@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BsHash } from 'react-icons/bs';
 import { FaChevronDown, FaChevronRight, FaPlus } from 'react-icons/fa';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const topics = ['tailwind-css', 'react'];
 const questions = ['jit-compilation', 'purge-files', 'dark-mode'];

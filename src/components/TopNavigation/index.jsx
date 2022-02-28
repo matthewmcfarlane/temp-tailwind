@@ -6,12 +6,17 @@ import {
   FaMoon,
   FaSun,
 } from 'react-icons/fa';
+import {RiLogoutBoxFill, RiLogoutBoxLine} from 'react-icons/ri'
+import { useAuth0 } from '@auth0/auth0-react';
 import useDarkMode from '../../hooks/useDarkMode';
 
 const TopNavigation = () => {
   return (
-    <div className='top-navigation'>
-      <HashtagIcon />
+    <div className='flex flex-row items-center justify-evenly 
+    bg-deeppurple-700 dark:bg-gray-700 
+    h-16 
+    m-0  w-screen fixed
+    shadow-lg;'>
       <Title />
       <ThemeIcon />
       <Search />
@@ -42,8 +47,20 @@ const Search = () => (
   </div>
 );
 const BellIcon = () => <FaRegBell size='24' className='top-navigation-icon' />;
-const UserCircle = () => <FaUserCircle size='24' className='top-navigation-icon' />;
-const HashtagIcon = () => <FaHashtag size='20' className='title-hashtag' />;
-const Title = () => <h5 className='title-text'>tailwind-css</h5>;
+
+
+
+
+const UserCircle = () => {
+const { logout, isAuthenticated } = useAuth0();
+  return(<RiLogoutBoxLine size='24' className='top-navigation-icon' onClick={()=>logout()} />);}
+
+
+
+
+
+const Title = () => <h5 className='text-xl text-gray-500 tracking-wider font-semibold text-opacity-80 
+mr-auto ml-2 my-auto 
+transition duration-300 ease-in-out'>Zappr</h5>;
 
 export default TopNavigation;
