@@ -1,5 +1,5 @@
 import Channelbar from './components/ChannelBar';
-import ContentContainer from './components/ContentContainer';
+import DashboardContainer from './components/DashboardContainer';
 import SideBar from './components/SideBar';
 import { useAuth0 } from '@auth0/auth0-react';
 import TopNavigation from './components/TopNavigation'
@@ -18,7 +18,7 @@ function App() {
 <TopNavigation />
 <SideBar />
     <div className="flex">
-      <ContentContainer />
+      <DashboardContainer />
     </div>
   </>
   );

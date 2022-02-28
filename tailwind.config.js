@@ -18,7 +18,7 @@ module.exports = {
           200: '#ebedef',
           100: '#f2f3f5',
         },
-        deeppurple: {700: '#512DA8',
+        deeppurple: {700: '#303F9F',
       },
       },
       spacing: {

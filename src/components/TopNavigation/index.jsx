@@ -15,7 +15,7 @@ const TopNavigation = () => {
     <div className='flex flex-row items-center justify-evenly 
     bg-deeppurple-700 dark:bg-gray-700 
     h-16 
-    m-0  w-screen fixed
+    m-0  w-full fixed
     shadow-lg;'>
       <Title />
       <ThemeIcon />
