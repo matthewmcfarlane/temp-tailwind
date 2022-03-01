@@ -13,13 +13,6 @@ const BugRows = ({ bugsToRender, isEditing, checked, handleOnChange, assigneeEle
                {isEditing == true ?
                <input id={`custom-checkbox-${index}`} className="mr-2" name={bug.name} value={bug.name} type="checkbox" checked={checked[index]} onChange={() => handleOnChange(index)}/>
                : isEditing == false} 
-               <div className="flex-shrink-0 h-10 w-10">
-                 {/* <img
-                   className="h-10 w-10 rounded-full"
-                   src={user.picture}
-                   alt=""
-                 /> */}
-               </div>
                <div className="ml-4">
                  {assigneeElements(bug)}
                </div>
