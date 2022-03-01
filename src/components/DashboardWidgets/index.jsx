@@ -7,10 +7,12 @@
 const AllWidgets = () => {
     return ( 
 
-        <div className="  ">
+        <div className="flex flex-wrap justify-around">
 
 
        <TotalTickets />
+       <MyTickets />
+       <UnassignedTickets />
 
         </div>
 
@@ -22,12 +24,33 @@ const AllWidgets = () => {
 const TotalTickets = () => {
     return ( 
 
-        <div className="bg-gray-400 w-20 h-16 text-center">
-            <h2>5</h2>
+        <div className="widget h-32 w-32">
+            <h2>Total Open Tickets</h2>
         </div>
     
      );
-}
+    }
+
+const MyTickets = () => {
+    return ( 
+
+        <div className="widget h-32 w-32">
+            <h2>My Open Tickets</h2>
+        </div>
+    
+     );
+    }
+
+const UnassignedTickets = () => {
+    return ( 
+
+        <div className="widget h-32 w-32">
+            <h2>Unassigned Tickets</h2>
+        </div>
+    
+     );
+    }
+
  
 
 

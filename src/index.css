@@ -23,6 +23,15 @@
     cursor-pointer shadow-lg ;
   }
 
+
+  .widget {
+    @apply
+      bg-indigo-700 text-gray-100
+      text-xl font-bold
+      flex items-center content-center justify-center
+      rounded
+  }
+
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
     text-white bg-gray-900 
